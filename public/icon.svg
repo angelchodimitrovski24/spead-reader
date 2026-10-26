@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24211d" />
+      <stop offset="100%" stop-color="#141311" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#e0533c" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#bg)" />
+  <rect width="504" height="504" x="4" y="4" rx="124" fill="none" stroke="#e0c9a6" stroke-opacity="0.15" stroke-width="4" />
+
+  <!-- Open Book Silhouette -->
+  <g filter="url(#shadow)" transform="translate(96, 120)">
+    <!-- Left page -->
+    <path d="M 160 220 C 100 190 40 190 0 200 L 0 50 C 40 40 100 40 160 70 Z" fill="#3a342c" />
+    <!-- Right page -->
+    <path d="M 160 220 C 220 190 280 190 320 200 L 320 50 C 280 40 220 40 160 70 Z" fill="#2d2822" />
+    <!-- Page edges -->
+    <path d="M 160 70 L 160 220" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <!-- Speed Lightning Bolt in center -->
+  <path d="M 275 140 L 210 270 L 260 270 L 235 375 L 315 245 L 265 245 Z" fill="url(#accent)" filter="url(#shadow)" />
+
+  <!-- RSVP Eye fixation crosshairs -->
+  <circle cx="256" cy="256" r="6" fill="#ffffff" opacity="0.9" />
+</svg>
